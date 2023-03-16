@@ -3,7 +3,11 @@
     "path": "D:/UCL_CODE/CASA0023_GroupWork/group_presentation.Rmd",
     "project_path": "group_presentation.Rmd",
     "type": "r_markdown",
+<<<<<<< Updated upstream
     "hash": "1096105586",
+=======
+    "hash": "3581066479",
+>>>>>>> Stashed changes
     "contents": "",
     "dirty": false,
     "created": 1678792685247.0,
@@ -18,11 +22,19 @@
         "rmdVisualMode": "false"
     },
     "folds": "",
+<<<<<<< Updated upstream
     "lastKnownWriteTime": 1678978251,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
     "last_content_update": 1678978251,
+=======
+    "lastKnownWriteTime": 1678978054,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1678978054,
+>>>>>>> Stashed changes
     "read_only": false,
     "read_only_alternatives": []
 }
