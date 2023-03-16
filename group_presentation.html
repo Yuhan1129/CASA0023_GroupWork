@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Rapid Identification Platform for Urban Illegal Construction Based on Remote Sensing</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="osyz" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Rapid Identification Platform for Urban Illegal Construction Based on Remote Sensing
+]
+.subtitle[
+## CASA0023 Group Presentation
+]
+.author[
+### osyz
+]
+.institute[
+### RStudio, PBC
+]
+.date[
+### 2023/3/14
+]
+
+---
+
+
+
+
+class: center, middle
+
+# Workflow
+
+### Discuss how the data created or the devised workflow could be incorporated into the city’s “business as usual” data pipelines or workflows
+
+---
+
+# Hardware preparation
+
+Firstly, the hardware infrastructure of the identification platform needs to be built, including storage devices, computing devices, network devices, security devices, etc. However, in the early stage when the business scale is small, cloud servers, such as Amazon Web Services (AWS), can be used first. In the distant stage when the business scale expands a lot, the construction of local servers can be considered.
+
+---
+
+# Database construction
+
+Secondly, store the acquired remote sensing image data on the server, and construct the remote sensing database after data pre-processing such as slicing and stitching. Acquire data through relevant channels and construct a basic geographic and planning database, containing topography, structures, planning data, etc. Afterwards, using the data processing and analysis methods described above, unauthorised construction is identified and the resulting possible unauthorised construction sites are compared with the recorded registration data and planning data to identify unauthorised construction sites based on laws and regulations and to build a business database.
+
+---
+
+# Use of the service platform
+
+Thirdly, based on each database, the image management platform, violation identification platform, collaborative office platform and spatial analysis platform are developed and integrated into one service system, and a visualised WebGIS client is established using the 3D model of the city to facilitate the use of the management staff. The image management platform provides management services for remote sensing image data; the violation identification platform allows users to modify violation identification rules and provide feedback information after on-site investigation; the collaborative office platform provides office services such as violation point reporting, querying, processing and recording so that managers from different departments can clearly remedy violation points; the spatial analysis platform can analyse the spatial distribution characteristics of violation data in the city so that the construction of violation can be restricted in a more root cause manner at the macro policy level. Based on this service platform, illegal construction sites are investigated and dealt with.
+
+---
+
+# Subsequent functional upgrades
+
+The application of remote sensing data in the field of investigating and dealing with urban violations is not limited to illegal construction, but can also be applied to urban river encroachment, loss of urban greenery, illegal industrial discharge and so on. The platform has a complete collection, analysis and processing process system, and these functions can be added to the system's violation identification platform and can be used directly. Therefore, the system has a wide potential for upgrading and will be developed continuously according to the demand.
+
+---
+
+# Workflow
+
+&lt;img src="img/Workflow.png" width="100%" /&gt;
+
+---
+
+# Zonal grid governance
+
+### Grid management of remote sensing image data
+
+Due to financial constraints, in the first phase, the analysis was conducted only for the central urban areas and areas with a high incidence of building violations (2023.04, 2023.08, 2023.10, 2023.12, 2024.02, 2024.04).
+In the long term, high frequency of remote sensing data acquisition (once a month) can be adopted for urban central areas and areas with high prevalence of illegal buildings, and low frequency (once every two months) can be adopted for suburban areas and areas with low prevalence of illegal buildings, so that the detection of illegal buildings can be carried out with the highest efficiency.
+
+### Grid-based management of building violations
+
+"Grid-based governance" is the specific application of grid-based management technology and management concept in urban management, that is, the city area as a whole, according to certain standards for unified classification and coding, input into the grid-based management information system, and assign the grid manager to inspect the situation in the grid at any time, so as to achieve urban illegal building investigation and handling The management is active, dynamic and refined.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
