@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Rapid Identification Platform for Urban Illegal Construction Based on Remote Sensing</title>
+    <title>Rapid Identification Platform for Urban Illegal Construction Based on Remote Sensing in Istanbul</title>
     <meta charset="utf-8" />
     <meta name="author" content="osyz" />
     <script src="libs/header-attrs/header-attrs.js"></script>
@@ -31,13 +31,13 @@ background-position: center
 
 
 
-# Rapid Identification Platform for Urban Illegal Construction Based on Remote Sensing
+# Rapid Identification Platform for Urban Illegal Construction Based on Remote Sensing in Istanbul
 
-### CASA0023 Group Presentation
+### *CASA0023 Group Presentation*
 
 ### osyz
 
-*17/03/2023*
+#### 17/03/2023
 
 ---
 
@@ -200,7 +200,7 @@ Compare the buildings in the classification map with cadastral digital map
   - The buildings that are contradict to cadastral would be identified illegal.
 
 
-###Validation!
+### Validation!
 
 Visit the sites of the identified buildings and verify their legality using on-site inspections or by consulting with local authorities
 ]
@@ -210,60 +210,63 @@ Visit the sites of the identified buildings and verify their legality using on-s
 &lt;img src="img/cadastral.png" width="120%" /&gt;
 .small[ Ground truth cadastral data overlap with results.Source: Jovanović et al., 2021]
 ]
----
 
-class: center, middle
+
+class: inverse, center, middle
+
 
 # Workflow
 
-### Discuss how the data created or the devised workflow could be incorporated into the city’s “business as usual” data pipelines or workflows
-
 ---
 
-# Hardware preparation
+## Hardware preparation
 
 Firstly, the hardware infrastructure of the identification platform needs to be built, including storage devices, computing devices, network devices, security devices, etc. However, in the early stage when the business scale is small, cloud servers, such as Amazon Web Services (AWS), can be used first. In the distant stage when the business scale expands a lot, the construction of local servers can be considered.
 
 ---
 
-# Database construction
+## Database construction
 
 Secondly, store the acquired remote sensing image data on the server, and construct the remote sensing database after data pre-processing such as slicing and stitching. Acquire data through relevant channels and construct a basic geographic and planning database, containing topography, structures, planning data, etc. Afterwards, using the data processing and analysis methods described above, unauthorised construction is identified and the resulting possible unauthorised construction sites are compared with the recorded registration data and planning data to identify unauthorised construction sites based on laws and regulations and to build a business database.
 
 ---
 
-# Use of the service platform
+## Use of the service platform
 
 Thirdly, based on each database, the image management platform, violation identification platform, collaborative office platform and spatial analysis platform are developed and integrated into one service system, and a visualised WebGIS client is established using the 3D model of the city to facilitate the use of the management staff. The image management platform provides management services for remote sensing image data; the violation identification platform allows users to modify violation identification rules and provide feedback information after on-site investigation; the collaborative office platform provides office services such as violation point reporting, querying, processing and recording so that managers from different departments can clearly remedy violation points; the spatial analysis platform can analyse the spatial distribution characteristics of violation data in the city so that the construction of violation can be restricted in a more root cause manner at the macro policy level. Based on this service platform, illegal construction sites are investigated and dealt with.
 
 ---
 
-# Subsequent functional upgrades
+## Subsequent functional upgrades
 
 The application of remote sensing data in the field of investigating and dealing with urban violations is not limited to illegal construction, but can also be applied to urban river encroachment, loss of urban greenery, illegal industrial discharge and so on. The platform has a complete collection, analysis and processing process system, and these functions can be added to the system's violation identification platform and can be used directly. Therefore, the system has a wide potential for upgrading and will be developed continuously according to the demand.
 
 ---
 
-# Workflow
+## Workflow
 
 &lt;img src="img/Workflow.png" width="100%" /&gt;
 
 ---
 
-# Zonal grid governance
+## Zonal grid governance
 
-### Grid management of remote sensing image data
+.pull-left[
+##### Grid management of remote sensing image data
 
 Due to financial constraints, in the first phase, the analysis was conducted only for the central urban areas and areas with a high incidence of building violations (2023.04, 2023.08, 2023.10, 2023.12, 2024.02, 2024.04).
 In the long term, high frequency of remote sensing data acquisition (once a month) can be adopted for urban central areas and areas with high prevalence of illegal buildings, and low frequency (once every two months) can be adopted for suburban areas and areas with low prevalence of illegal buildings, so that the detection of illegal buildings can be carried out with the highest efficiency.
+]
 
-### Grid-based management of building violations
+.pull-right[
+##### Grid-based management of building violations
 
 "Grid-based governance" is the specific application of grid-based management technology and management concept in urban management, that is, the city area as a whole, according to certain standards for unified classification and coding, input into the grid-based management information system, and assign the grid manager to inspect the situation in the grid at any time, so as to achieve urban illegal building investigation and handling The management is active, dynamic and refined.
+]
 
 ---
 
-class: center, middle
+class: inverse, center, middle
 
 # Project Management
 
@@ -307,7 +310,7 @@ class: center, middle
 
 - Total duration: 1 year
 
- ![](time.jpeg)
+ ![](img/time.jpeg)
 
 ---
 
@@ -315,7 +318,7 @@ class: center, middle
 
 - Data: 20 (£/km²) \* 2570 (km²) \* 6 (time) = 308,400 (£)
 
-![](cost.jpeg)
+![](img/cost.jpeg)
 
 ---
 
@@ -481,7 +484,8 @@ for Change". In: _Urban Studies_ 50.16, pp. 3428-3445.
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
 "highlightLines": true,
-"countIncrementalSlides": false
+"countIncrementalSlides": false,
+"ratio": "4:3"
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
