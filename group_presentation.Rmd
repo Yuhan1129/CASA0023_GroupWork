@@ -265,3 +265,48 @@ class: center, middle
   *Solution*:
   
   - Ensure the availability of alternative data sources and technical staff.
+  
+---
+
+# Conclusion
+A platform that can regularly monitor illegal buildings and assist on-site investigation of illegal buildings.
+
+![](https://github.com/suiqi37/CASA0023_GroupWork/raw/main/5.1.png)
+.small[Source:[WEGIS](http://www.wegis.com.cn/#/illegalBuilding)]
+---
+
+# Benefit
+
+- **Enforcing Building Codes and Regulations** : Deter future illegal building and encourage compliance with building codes and regulations
+
+- **Save a lot of costs to deal with illegal buildings**
+
+- **Protecting property values**: Protect property values for residents and businesses in the area
+
+- **Ensuring public safety**: Illegal building can lead to serious safety hazards for the occupants of the building and those in the surrounding area.
+
+- **Protect the environment**: Some illegal buildings are built in nature reserves, urban sewage pipes and other places of great environmental impact
+
+- **Save costs and reduce manpower**: Compared with traditional manual inspection, machine learning using remote sensing data reduces the time and labor required
+
+- **Higher efficiency**: Testing is faster, allowing governments to respond more quickly
+
+---
+
+# Benefit
+
+|policy | output | improvement
+--------|---------|---------
+International|The Sustainable Development Goals (SDGs)|detect illegal building|Reducing "the proportion of the urban population living in slums, informal settlements or inadequate housing"
+International|The New Urban Agenda|-| prevention of slums and informal settlements
+National|Urban Regeneration Law|-|-
+National|Construction Law|- |-
+City|Urban Planning Training and Capacity Development Programme for Resilient Istanbul|The future development of illegal building location reporting function| ensure proactive participation of all inhabitants of Istanbul
+
+---
+## Limitation
+
+- Illegal buildings that only change in height cannot be detected using this method
+
+- The method takes more time to continuously improve the accuracy
+---
