@@ -2,17 +2,52 @@
 title: "Rapid Identification Platform for Urban Illegal Construction Based on Remote Sensing"
 subtitle: "CASA0023 Group Presentation"
 author: "osyz"
-institute: "RStudio, PBC"
-date: "2023/3/14"
+date: "2023/3/16"
 output:
   xaringan::moon_reader:
+    css: xaringan-themer.css
     lib_dir: libs
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+    seal: false
+    ratio: 16:9
 ---
-class: center, middle
+class: inverse, center, title-slide, middle
+
+background-image: url("img/cover.png")
+background-size: cover
+background-position: center
+
+```{r include=FALSE, warning=FALSE}
+library(countdown)
+library(xaringan)
+library(xaringanExtra)
+library(knitr)
+library(xaringanthemer)
+
+style_mono_accent(base_color = "#752e31")
+```
+
+```{r xaringanExtra-search, echo=FALSE}
+xaringanExtra::use_search(show_icon = TRUE)
+```
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE}
+library(fontawesome)
+```
+
+# Rapid Identification Platform for Urban Illegal Construction Based on Remote Sensing
+
+### CASA0023 Group Presentation
+
+### osyz
+
+*`r format(Sys.time(), "%d/%m/%Y")`*
+
+---
+class: inverse, center, middle
 
 # Approach
 
