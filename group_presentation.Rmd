@@ -14,11 +14,8 @@ output:
       ratio: '4:3'
     seal: false
 ---
-class: inverse, center, title-slide, middle
 
-background-image: url("img/cover.png")
-background-size: cover
-background-position: center
+class: inverse, center, title-slide, middle
 
 ```{r include=FALSE, warning=FALSE}
 library(countdown)
@@ -36,12 +33,12 @@ style_mono_accent(base_color = "#752e31")
 xaringanExtra::use_search(show_icon = TRUE)
 ```
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
-
 ```{r load_packages, message=FALSE, warning=FALSE, include=FALSE}
 library(fontawesome)
+```
+
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
 ```
 
 ```{r setup, include=FALSE}
@@ -49,6 +46,10 @@ options(htmltools.dir.version = FALSE)
 BibOptions(check.entries = FALSE, bib.style = "authoryear",cite.style = "authoryear", style = "markdown", hyperlink = TRUE, dashed = TRUE, no.print.fields=c("doi", "url", "urldate", "issn"))
 myBib <- RefManageR::ReadBib("Bib.bib")
 ```
+
+background-image: url("img/cover.png")
+background-size: cover
+background-position: center
 
 # Rapid Identification Platform for Urban Illegal Construction Based on Remote Sensing in Istanbul
 
@@ -72,16 +73,22 @@ class: left, middle
 * Conclusion
 
 ---
-class: center, middle
+
+class: inverse, center, middle
 
 # City Problem
 
 ---
+
 class: left, left
+
 ## City Problem
+
 #### Brief summary of illegal construction problem
+
 * With the rapid urbanization around the world, illegal building is one of the crucial problem happened or still happening in Italy `r Citep(myBib,"romanoIllegalBuildingItaly2021a")`, India `r Citep(myBib,"plusBuildingCollapsesDangers2022")`, Ghana `r Citep(myBib,"akrofiSustainableUrbanDevelopment2019b")`, China `r Citep(myBib,"yanglinaResearchIllegalBuilding2010")`,and many other countries.
 * The problem of illegal construction in Turkey, which was brought to wide attention by the devastating earthquake in early February this year again, is a very serious and unsustainable development issue, and its impact is huge `r Citep(myBib,"uzunUpgradingIllegalSettlements2015a")`.
+
 .pull-right[
 ```{r echo=FALSE, out.width='80%', fig.align='center'}
 knitr::include_graphics('img/earthquake_image.jpg')
@@ -89,10 +96,15 @@ knitr::include_graphics('img/earthquake_image.jpg')
 <font size = 1> Fig.1 Buildings after earthquake in Turkey February, 2023.
 Source: [**BBC news**](https://www.bbc.co.uk/news/64568826)
 ]
+
 ---
+
 class: left, left
+
 ## City Problem
+
 ### Negative Impact of illegal buildings
+
 .panelset[
 .panel[.panel-name[Environment]
 * Encroachment on nature: nature reserves, rivers, forests `r Citep(myBib,"jovanovicEnvironmentalImpactIllegal2019a")`
@@ -102,6 +114,7 @@ knitr::include_graphics('img/illegal_building_environment.png')
 <font size = 1> Fig.2 Illegal buildings close to river.
 Source: `r Citep(myBib,"feliceRankingIllegalBuildings2019a")`
 ]
+
 .panel[.panel-name[Economic]
 * Exacerbating urban poverty and high unemployment rate `r Citep(myBib,"ahsanInformalHousingApproaches2010a")` 
 
@@ -110,6 +123,7 @@ Source: `r Citep(myBib,"feliceRankingIllegalBuildings2019a")`
 * Distorting markets and creating unfair competition
 
 ]
+
 .panel[.panel-name[Society and population]
 * Huge inter migration `r Citep(myBib,"zanfiCittaAbusivaContemporary2013a")`
 
@@ -122,9 +136,13 @@ Source: `r Citep(myBib,"feliceRankingIllegalBuildings2019a")`
 ]
 
 ---
+
 class: left, left
-##City Problem
+
+## City Problem
+
 #### Specific situation in Istanbul
+
 * **Istanbul**, Turkey's largest and most populous city, has always faced significant challenges related to illegal construction. The city has struggled to cope with urbanization and growing demand for housing, which has led to uncontrolled and informal building practices.
 
 #### Explanation of important term
@@ -132,9 +150,13 @@ class: left, left
 Buildings located in Turkey without permission and registration and does not conform to the local urban cadastral plan `r Citep(myBib,"bayraktarLANDREGISTRYCADASTRE2006a","uzunUpgradingIllegalSettlements2015a")`
 
 ---
+
 class: left, left
+
 ## City Problem
+
 ### Relevant global and local policy
+
 .panelset[
 .panel[.panel-name[Global policy]
 **1.United Nation: The Sustainable Development Goals (SDGs)**
@@ -162,12 +184,15 @@ aims to support capacity development for the “Next Generation Participatory Pl
 ]
 
 ---
+
 class: inverse, center, middle
 
 # Approach
 
 ---
+
 ## Data
+
 .pull-left[
 **WorldView-3**
 - Very High Resolution(VHR)
@@ -191,10 +216,9 @@ knitr::include_graphics('img/worldview3.jpeg')
 ]
 
 ---
+
 ## Object-based Image Analysis
-```{r xaringan-panelset, echo=FALSE}
-xaringanExtra::use_panelset()
-```
+
 .panelset[
 .panel[.panel-name[Image Segmentation]
 **Multi-resolution segmentation(MRS)**
@@ -223,7 +247,9 @@ knitr::include_graphics('img/classification.png')
 .small[Classification using SVM.Source: Norman et al., 2021]
 ]
 ]
+
 ---
+
 ## Identifying Illegal Buildings
 .pull-left[
 
@@ -307,7 +333,7 @@ class: inverse, center, middle
 
 ---
 
-# Work package
+## Work package
 
 - **Package 1**
 
@@ -335,7 +361,7 @@ class: inverse, center, middle
 
 ---
 
-# Time
+## Time
 
 - Project approval: 15 days
 
@@ -349,7 +375,7 @@ class: inverse, center, middle
 
 ---
 
-# Cost
+## Cost
 
 - Data: 20 (£/km²) \* 2570 (km²) \* 6 (time) = 308,400 (£)
 
@@ -357,7 +383,7 @@ class: inverse, center, middle
 
 ---
 
-# Risk and solutions
+## Risk and solutions
 
 1. **Social risk**:
 
@@ -383,14 +409,21 @@ class: inverse, center, middle
   
 ---
 
+class: inverse, center, middle
+
 # Conclusion
+
+---
+
+## Conclusion
 A platform that can regularly monitor illegal buildings and assist on-site investigation of illegal buildings.
 
 ![](https://github.com/suiqi37/CASA0023_GroupWork/raw/main/5.1.png)
 .small[Source:[WEGIS](http://www.wegis.com.cn/#/illegalBuilding)]
+
 ---
 
-# Benefit
+## Benefit
 
 - **Enforcing Building Codes and Regulations** : Deter future illegal building and encourage compliance with building codes and regulations
 
@@ -408,7 +441,7 @@ A platform that can regularly monitor illegal buildings and assist on-site inves
 
 ---
 
-# Benefit
+## Benefit
 
 |policy | output | improvement
 --------|---------|---------
@@ -419,22 +452,31 @@ National|Construction Law|- |-
 City|Urban Planning Training and Capacity Development Programme for Resilient Istanbul|The future development of illegal building location reporting function| ensure proactive participation of all inhabitants of Istanbul
 
 ---
+
 ## Limitation
 
 - Illegal buildings that only change in height cannot be detected using this method
 
 - The method takes more time to continuously improve the accuracy
+
 ---
+
 class: left, left
+
 ##References
+
 .small[
 ```{r, results='asis', echo=FALSE}
 RefManageR::PrintBibliography(myBib,start = 1, end = 10)
 ```
 ]
+
 ---
+
 class: left, left
+
 ##References
+
 .small[
 ```{r, results='asis', echo=FALSE}
 RefManageR::PrintBibliography(myBib,start = 11, end = 14)
