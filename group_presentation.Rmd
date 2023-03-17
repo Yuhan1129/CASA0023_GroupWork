@@ -418,3 +418,18 @@ City|Urban Planning Training and Capacity Development Programme for Resilient Is
 
 - The method takes more time to continuously improve the accuracy
 ---
+class: left, left
+##References
+.small[
+```{r, results='asis', echo=FALSE}
+RefManageR::PrintBibliography(myBib,start = 1, end = 10)
+```
+]
+---
+class: left, left
+##References
+.small[
+```{r, results='asis', echo=FALSE}
+RefManageR::PrintBibliography(myBib,start = 11, end = 14)
+```
+]
