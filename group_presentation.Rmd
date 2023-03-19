@@ -81,20 +81,23 @@ class: inverse, center, middle
 ---
 
 class: left, left
+## City Problem
+#### Brief summary of illegal construction problem
+* <font size = 3> With the rapid urbanization around the world, illegal building is one of the crucial problem happened or still happening in many other countries `r Citep(myBib,"akrofiSustainableUrbanDevelopment2019b","romanoIllegalBuildingItaly2021a")`.
+* <font size = 3> The problem of illegal construction in Turkey, which was brought to wide attention by the devastating earthquake in early February this year again, is a very serious and unsustainable development issue, and its impact is huge `r Citep(myBib,"uzunUpgradingIllegalSettlements2015a")`.
+* <font size = 3> **Istanbul**, Turkey's largest and most populous city, also faced significant challenges related to illegal construction. The city has struggled to cope with urbanization and growing demand for housing, which has led to uncontrolled and informal building practices.
 
-### City Problem
-
-#### Brief summary of illegal Buildings problem
-
-* With the rapid urbanization around the world, illegal building is one of the crucial problem happened or still happening in Italy `r Citep(myBib,"romanoIllegalBuildingItaly2021a")`, India `r Citep(myBib,"plusBuildingCollapsesDangers2022")`, Ghana `r Citep(myBib,"akrofiSustainableUrbanDevelopment2019b")`, China `r Citep(myBib,"yanglinaResearchIllegalBuilding2010")`,and many other countries.
-* The problem of illegal buildings in Turkey, which was brought to wide attention by the devastating earthquake in early February this year again, is a very serious and unsustainable development issue, and its impact is huge `r Citep(myBib,"uzunUpgradingIllegalSettlements2015a")`.
-
+.pull-left[
+* **Illegal buildings: **
+<font size = 2> Buildings located in Turkey without permission and registration and does not conform to the local urban cadastral plan `r Citep(myBib,"bayraktarLANDREGISTRYCADASTRE2006a","uzunUpgradingIllegalSettlements2015a")`
+]
 .pull-right[
 ```{r echo=FALSE, out.width='80%', fig.align='center'}
 knitr::include_graphics('img/earthquake_image.jpg')
 ```
-<font size = 1> Fig. Buildings after earthquake in Turkey February, 2023.
+.small[Fig. Buildings after earthquake in Turkey February, 2023.
 Source: [**BBC news**](https://www.bbc.co.uk/news/64568826)
+]
 ]
 
 ---
@@ -111,8 +114,9 @@ class: left, left
 ```{r echo=FALSE, out.width='60%', fig.align='center'}
 knitr::include_graphics('img/illegal_building_environment.png')
 ```
-<font size = 1> Fig. Illegal buildings close to river.
-Source: `r Citep(myBib,"feliceRankingIllegalBuildings2019a")`
+.small[Fig. Illegal buildings close to river.
+Source: `r Citet(myBib,"feliceRankingIllegalBuildings2019a")`
+]
 ]
 
 .panel[.panel-name[Economic]
@@ -141,47 +145,34 @@ class: left, left
 
 ### City Problem
 
-#### Specific situation in Istanbul
-
-* **Istanbul**, Turkey's largest and most populous city, has always faced significant challenges related to illegal buildings. The city has struggled to cope with urbanization and growing demand for housing, which has led to uncontrolled and informal building practices.
-
-#### Explanation of important term
-* Illegal buildings (illegal building): 
-Buildings located in Turkey without permission and registration and does not conform to the local urban cadastral plan `r Citep(myBib,"bayraktarLANDREGISTRYCADASTRE2006a","uzunUpgradingIllegalSettlements2015a")`
-
----
-
-class: left, left
-
-### City Problem
-
 #### Relevant global and local policy
 
 .panelset[
 .panel[.panel-name[Global policy]
 
 **1.United Nation: The Sustainable Development Goals (SDGs)**
-* Goal 11: "Make cities and human settlements inclusive, safe, resilient, and sustainable."
-* Target 11.1: By 2030, ensure access for all to adequate, safe and affordable housing and basic services and upgrade slums
-* Indicator 11.1.1: Proportion of urban population living in slums, informal settlements or inadequate housing
+* .small[Goal 11: "Make cities and human settlements inclusive, safe, resilient, and sustainable."]
+* .small[Target 11.1: By 2030, ensure access for all to adequate, safe and affordable housing and basic services and upgrade slums]
+* .small[Indicator 11.1.1: Proportion of urban population living in slums, informal settlements or inadequate housing]
 
 **2.United Nation: The New Urban Agenda**
-* Increase the allocation of financial and human resources, as appropriate, to address the problem of illegal buildings in a sustainable manner so that residents live in safe, inclusive, accessible, green and quality Spaces, and should promote tenure security and its regularization, as well as conflict prevention and timely mediation.
+* .small[Increase the allocation of financial and human resources, as appropriate, to address the problem of illegal construction in a sustainable manner so that residents live in safe, inclusive, accessible, green and quality Spaces, and should promote tenure security and its regularization, as well as conflict prevention and timely mediation.]
 ]
 
 .panel[.panel-name[National policy]
 
-* **2012-"The urban regeneration law"**
+**1.2012-"The urban regeneration law"**
 
-a legal framework for the renewal and restoration and protection of cultural sites in areas considered unsafe or substandard in urban centers. It also includes measures to tackle illegal buildings, such as property and legal alternatives for residents living in illegal structures where unsafe structures are demolished.
+* A legal framework for the renewal and restoration and protection of cultural sites in areas considered unsafe or substandard in urban centers. It also includes measures to tackle illegal buildings, such as property and legal alternatives for residents living in illegal structures where unsafe structures are demolished.
 
-* **Construction Law (İmar Kanunu in Turkish) Article 42**
 
-Stricter building codes and increased fines and penalties for violators
+**2.Construction Law (İmar Kanunu in Turkish) Article 42**
+
+* Stricter building codes and increased fines and penalties for violators
 .panel[.panel-name[City policy]
-* **Urban Planning Training and Capacity Development Programme for Resilient Istanbul:**
+**1.Urban Planning Training and Capacity Development Programme for Resilient Istanbul:**
 
-aims to support capacity development for the “Next Generation Participatory Planning Framework” in urban planning processes of the Municipality based on open government vision.
+* Aims to support capacity development for the “Next Generation Participatory Planning Framework” in urban planning processes of the Municipality based on open government vision.
 ]
 ]
 ]
