@@ -82,7 +82,7 @@ class: inverse, center, middle
 
 class: left, left
 
-## City Problem
+### City Problem
 
 #### Brief summary of illegal construction problem
 
@@ -93,7 +93,7 @@ class: left, left
 ```{r echo=FALSE, out.width='80%', fig.align='center'}
 knitr::include_graphics('img/earthquake_image.jpg')
 ```
-<font size = 1> Fig.1 Buildings after earthquake in Turkey February, 2023.
+<font size = 1> Fig. Buildings after earthquake in Turkey February, 2023.
 Source: [**BBC news**](https://www.bbc.co.uk/news/64568826)
 ]
 
@@ -101,9 +101,9 @@ Source: [**BBC news**](https://www.bbc.co.uk/news/64568826)
 
 class: left, left
 
-## City Problem
+### City Problem
 
-### Negative Impact of illegal buildings
+#### Negative Impact of illegal buildings
 
 .panelset[
 .panel[.panel-name[Environment]
@@ -111,7 +111,7 @@ class: left, left
 ```{r echo=FALSE, out.width='60%', fig.align='center'}
 knitr::include_graphics('img/illegal_building_environment.png')
 ```
-<font size = 1> Fig.2 Illegal buildings close to river.
+<font size = 1> Fig. Illegal buildings close to river.
 Source: `r Citep(myBib,"feliceRankingIllegalBuildings2019a")`
 ]
 
@@ -139,7 +139,7 @@ Source: `r Citep(myBib,"feliceRankingIllegalBuildings2019a")`
 
 class: left, left
 
-## City Problem
+### City Problem
 
 #### Specific situation in Istanbul
 
@@ -153,12 +153,13 @@ Buildings located in Turkey without permission and registration and does not con
 
 class: left, left
 
-## City Problem
+### City Problem
 
-### Relevant global and local policy
+#### Relevant global and local policy
 
 .panelset[
 .panel[.panel-name[Global policy]
+
 **1.United Nation: The Sustainable Development Goals (SDGs)**
 * Goal 11: "Make cities and human settlements inclusive, safe, resilient, and sustainable."
 * Target 11.1: By 2030, ensure access for all to adequate, safe and affordable housing and basic services and upgrade slums
@@ -167,7 +168,9 @@ class: left, left
 **2.United Nation: The New Urban Agenda**
 * Increase the allocation of financial and human resources, as appropriate, to address the problem of illegal construction in a sustainable manner so that residents live in safe, inclusive, accessible, green and quality Spaces, and should promote tenure security and its regularization, as well as conflict prevention and timely mediation.
 ]
+
 .panel[.panel-name[National policy]
+
 * **2012-"The urban regeneration law"**
 
 a legal framework for the renewal and restoration and protection of cultural sites in areas considered unsafe or substandard in urban centers. It also includes measures to tackle illegal construction, such as property and legal alternatives for residents living in illegal structures where unsafe structures are demolished.
@@ -191,7 +194,7 @@ class: inverse, center, middle
 
 ---
 
-## Data
+### Data
 
 .pull-left[
 **WorldView-3**
@@ -217,7 +220,7 @@ knitr::include_graphics('img/worldview3.jpeg')
 
 ---
 
-## Object-based Image Analysis
+### Object-based Image Analysis
 
 .panelset[
 .panel[.panel-name[Image Segmentation]
@@ -250,14 +253,15 @@ knitr::include_graphics('img/classification.png')
 
 ---
 
-## Identifying Illegal Buildings
+### Identifying Illegal Buildings
+
 .pull-left[
 
 Compare the buildings in the classification map with cadastral digital map
   - The buildings that are contradict to cadastral would be identified illegal.
 
 
-### Validation!
+#### Validation!
 
 Visit the sites of the identified buildings and verify their legality using on-site inspections or by consulting with local authorities
 ]
@@ -278,31 +282,66 @@ class: inverse, center, middle
 
 ---
 
-## Hardware preparation
+### Hardware preparation
 
-Firstly, the hardware infrastructure of the identification platform needs to be built, including storage devices, computing devices, network devices, security devices, etc. However, in the early stage when the business scale is small, cloud servers, such as Amazon Web Services (AWS), can be used first. In the distant stage when the business scale expands a lot, the construction of local servers can be considered.
+.pull-left[
 
----
+#### Component
+The hardware infrastructure of the identification platform needs to be built, including *storage devices, computing devices, network devices, security devices*, etc. 
 
-## Database construction
+#### Service choice
+However, in the early stage when the business scale is small, cloud servers, such as ***Amazon Web Services (AWS)***, can be used first. In the distant stage when the business scale expands a lot, the construction of local servers can be considered.
+]
 
-Secondly, store the acquired remote sensing image data on the server, and construct the remote sensing database after data pre-processing such as slicing and stitching. Acquire data through relevant channels and construct a basic geographic and planning database, containing topography, structures, planning data, etc. Afterwards, using the data processing and analysis methods described above, unauthorised construction is identified and the resulting possible unauthorised construction sites are compared with the recorded registration data and planning data to identify unauthorised construction sites based on laws and regulations and to build a business database.
+.pull-right[
 
----
-
-## Use of the service platform
-
-Thirdly, based on each database, the image management platform, violation identification platform, collaborative office platform and spatial analysis platform are developed and integrated into one service system, and a visualised WebGIS client is established using the 3D model of the city to facilitate the use of the management staff. The image management platform provides management services for remote sensing image data; the violation identification platform allows users to modify violation identification rules and provide feedback information after on-site investigation; the collaborative office platform provides office services such as violation point reporting, querying, processing and recording so that managers from different departments can clearly remedy violation points; the spatial analysis platform can analyse the spatial distribution characteristics of violation data in the city so that the construction of violation can be restricted in a more root cause manner at the macro policy level. Based on this service platform, illegal construction sites are investigated and dealt with.
-
----
-
-## Subsequent functional upgrades
-
-The application of remote sensing data in the field of investigating and dealing with urban violations is not limited to illegal construction, but can also be applied to urban river encroachment, loss of urban greenery, illegal industrial discharge and so on. The platform has a complete collection, analysis and processing process system, and these functions can be added to the system's violation identification platform and can be used directly. Therefore, the system has a wide potential for upgrading and will be developed continuously according to the demand.
+```{r echo=FALSE, out.width='100%'}
+knitr::include_graphics('img/managed-aws-servers.jpg')
+```
+.small[Fig. Amazon Web Services (AWS). Source:[Milletech](https://www.milletechinc.com/aws-service-atlanta.html)]
+]
 
 ---
 
-## Workflow
+### Database construction
+
+#### Remote sensing database
+Store the acquired remote sensing image data on the server, and construct the ***remote sensing database*** after data pre-processing such as slicing and stitching. 
+
+#### Basic geographic and planning database
+Acquire data through relevant channels and construct a ***basic geographic and planning database***, containing topography, structures, planning data, etc. 
+
+#### Process database
+Afterwards, using the data processing and analysis methods described above, unauthorised construction is identified and the resulting possible unauthorised construction sites are compared with the recorded registration data and planning data to identify unauthorised construction sites based on laws and regulations and to build a ***process database***.
+
+---
+
+### Use of the service platform
+
+Based on each database, the image management platform, violation identification platform, collaborative office platform and spatial analysis platform are developed and integrated into ***one service platform***, and ***a visualised WebGIS client*** is established using the 3D model of the city to facilitate the use of the management staff. Based on this service platform, illegal construction sites are investigated and dealt with.
+
+.panelset[
+.panel[.panel-name[Management]
+***The image management platform*** provides management services for remote sensing image data.
+]
+ 
+.panel[.panel-name[Identification]
+***The violation identification platform*** allows users to modify violation identification rules and provide feedback information after on-site investigation.
+]
+
+.panel[.panel-name[Office]
+***The collaborative office platform*** provides office services such as violation point reporting, querying, processing and recording so that managers from different departments can clearly remedy violation points.
+]
+
+.panel[.panel-name[Analysis]
+***The spatial analysis platform*** can analyse the spatial distribution characteristics of violation data in the city so that the construction of violation can be restricted in a more root cause manner at the macro policy level.
+]
+]
+
+---
+### Use of the service platform
+
+#### Service platform workflow
 
 ```{r echo=FALSE, out.width='100%'}
 knitr::include_graphics('img/Workflow.png')
@@ -310,20 +349,17 @@ knitr::include_graphics('img/Workflow.png')
 
 ---
 
-## Zonal grid governance
+### Subsequent upgrades
 
-.pull-left[
-##### Grid management of remote sensing image data
+#### Function
 
-Due to financial constraints, in the first phase, the analysis was conducted only for the central urban areas and areas with a high incidence of building violations (2023.04, 2023.08, 2023.10, 2023.12, 2024.02, 2024.04).
-In the long term, high frequency of remote sensing data acquisition (once a month) can be adopted for urban central areas and areas with high prevalence of illegal buildings, and low frequency (once every two months) can be adopted for suburban areas and areas with low prevalence of illegal buildings, so that the detection of illegal buildings can be carried out with the highest efficiency.
-]
+The application of remote sensing data in the field of investigating and dealing with urban violations is not limited to illegal construction, but can also be applied to ***urban river encroachment***, ***loss of urban greenery***, ***illegal industrial discharge*** and so on. The platform has a complete process system, and these functions can be added to the system and be used directly.
 
-.pull-right[
-##### Grid-based management of building violations
+#### Grid management of remote sensing image data
 
-"Grid-based governance" is the specific application of grid-based management technology and management concept in urban management, that is, the city area as a whole, according to certain standards for unified classification and coding, input into the grid-based management information system, and assign the grid manager to inspect the situation in the grid at any time, so as to achieve urban illegal building investigation and handling The management is active, dynamic and refined.
-]
+Due to financial constraints, in the first phase, the analysis was conducted only for the central urban areas and areas with a high incidence of building violations.
+
+In the long term, ***high frequency (once a month)*** of remote sensing data acquisition can be adopted for urban central areas and areas with high prevalence of illegal buildings, and ***low frequency (once every two months)*** can be adopted for suburban areas and areas with low prevalence of illegal buildings, so that the detection of illegal buildings can be carried out with the highest efficiency.
 
 ---
 
@@ -333,7 +369,7 @@ class: inverse, center, middle
 
 ---
 
-## Work package
+### Work package
 
 - **Package 1**
 
@@ -361,7 +397,7 @@ class: inverse, center, middle
 
 ---
 
-## Time
+### Time
 
 - Project approval: 15 days
 
@@ -375,7 +411,7 @@ class: inverse, center, middle
 
 ---
 
-## Cost
+### Cost
 
 - Data: 20 (£/km²) \* 2570 (km²) \* 6 (time) = 308,400 (£)
 
@@ -383,7 +419,7 @@ class: inverse, center, middle
 
 ---
 
-## Risk and solutions
+### Risk and solutions
 
 1. **Social risk**:
 
@@ -415,7 +451,7 @@ class: inverse, center, middle
 
 ---
 
-## Conclusion
+### Conclusion
 A platform that can regularly monitor illegal buildings and assist on-site investigation of illegal buildings.
 
 ![](https://github.com/suiqi37/CASA0023_GroupWork/raw/main/5.1.png)
@@ -423,7 +459,7 @@ A platform that can regularly monitor illegal buildings and assist on-site inves
 
 ---
 
-## Benefit
+### Benefit
 
 - **Enforcing Building Codes and Regulations** : Deter future illegal building and encourage compliance with building codes and regulations
 
@@ -441,7 +477,7 @@ A platform that can regularly monitor illegal buildings and assist on-site inves
 
 ---
 
-## Benefit
+### Benefit
 
 |policy | output | improvement
 --------|---------|---------
@@ -453,7 +489,7 @@ City|Urban Planning Training and Capacity Development Programme for Resilient Is
 
 ---
 
-## Limitation
+### Limitation
 
 - Illegal buildings that only change in height cannot be detected using this method
 
@@ -463,11 +499,11 @@ City|Urban Planning Training and Capacity Development Programme for Resilient Is
 
 class: left, left
 
-##References
+### References
 
 .small[
 ```{r, results='asis', echo=FALSE}
-RefManageR::PrintBibliography(myBib,start = 1, end = 10)
+RefManageR::PrintBibliography(myBib,start = 1, end = 12)
 ```
 ]
 
@@ -475,10 +511,10 @@ RefManageR::PrintBibliography(myBib,start = 1, end = 10)
 
 class: left, left
 
-##References
+### References
 
 .small[
 ```{r, results='asis', echo=FALSE}
-RefManageR::PrintBibliography(myBib,start = 11, end = 14)
+RefManageR::PrintBibliography(myBib,start = 13, end = 14)
 ```
 ]
