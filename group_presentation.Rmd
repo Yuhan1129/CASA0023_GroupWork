@@ -445,9 +445,8 @@ class: inverse, center, middle
 
 ### Conclusion
 A platform that can regularly monitor illegal buildings and assist on-site investigation of illegal buildings.
-
-![](https://github.com/suiqi37/CASA0023_GroupWork/raw/main/5.1.png)
-.small[Source:[WEGIS](http://www.wegis.com.cn/#/illegalBuilding)]
+![](img/5.1.png)
+.small[Fig. Service platform. Source:[WEGIS](http://www.wegis.com.cn/#/illegalBuilding)]
 
 ---
 
