@@ -298,7 +298,7 @@ However, in the early stage when the business scale is small, cloud servers, suc
 ```{r echo=FALSE, out.width='100%'}
 knitr::include_graphics('img/managed-aws-servers.jpg')
 ```
-<font size = 1> Fig. Amazon Web Services (AWS). Source:[Milletech](https://www.milletechinc.com/aws-service-atlanta.html)
+.small[ Fig. Amazon Web Services (AWS). Source:[Milletech](https://www.milletechinc.com/aws-service-atlanta.html)]
 ]
 
 ---
