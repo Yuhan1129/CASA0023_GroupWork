@@ -1,5 +1,5 @@
 ---
-title: "Rapid Identification Platform for Urban Illegal Construction Based on Remote Sensing in Istanbul"
+title: "Rapid Identification Platform for Urban Illegal Buildings Based on Remote Sensing in Istanbul"
 subtitle: "CASA0023 Group Presentation"
 author: "osyz"
 date: "2023/3/16"
@@ -51,7 +51,7 @@ background-image: url("img/cover.png")
 background-size: cover
 background-position: center
 
-# Rapid Identification Platform for Urban Illegal Construction Based on Remote Sensing in Istanbul
+# Rapid Identification Platform for Urban Illegal Buildings Based on Remote Sensing in Istanbul
 
 ### *CASA0023 Group Presentation*
 
@@ -61,16 +61,16 @@ background-position: center
 
 ---
 
-class: left, middle
+class: inverse, left, middle
 
-### Outline
+### *Outline*
 
 <font size = 5> 
-* City Problem
-* Approach
-* Workflow
-* Project Management
-* Conclusion
+1. City Problem
+2. Approach
+3. Workflow
+4. Project Management
+5. Conclusion
 
 ---
 
@@ -84,10 +84,10 @@ class: left, left
 
 ### City Problem
 
-#### Brief summary of illegal construction problem
+#### Brief summary of illegal Buildings problem
 
 * With the rapid urbanization around the world, illegal building is one of the crucial problem happened or still happening in Italy `r Citep(myBib,"romanoIllegalBuildingItaly2021a")`, India `r Citep(myBib,"plusBuildingCollapsesDangers2022")`, Ghana `r Citep(myBib,"akrofiSustainableUrbanDevelopment2019b")`, China `r Citep(myBib,"yanglinaResearchIllegalBuilding2010")`,and many other countries.
-* The problem of illegal construction in Turkey, which was brought to wide attention by the devastating earthquake in early February this year again, is a very serious and unsustainable development issue, and its impact is huge `r Citep(myBib,"uzunUpgradingIllegalSettlements2015a")`.
+* The problem of illegal buildings in Turkey, which was brought to wide attention by the devastating earthquake in early February this year again, is a very serious and unsustainable development issue, and its impact is huge `r Citep(myBib,"uzunUpgradingIllegalSettlements2015a")`.
 
 .pull-right[
 ```{r echo=FALSE, out.width='80%', fig.align='center'}
@@ -129,7 +129,7 @@ Source: `r Citep(myBib,"feliceRankingIllegalBuildings2019a")`
 
 * Social safety issue: disturb the social order, which makes government to be difficult to plan and manage `r Citep(myBib,"peroldArchitectureSouthernAfrican2019a","romanoIllegalBuildingItaly2021a")`
 
-* Human safety issue: the quality of illegal construction can not be guaranteed and may threaten the life and health of residents (e.g.earthquake, flood, etc) `r Citep(myBib,"hortonTurkeyEarthquakeWhy2023a")`
+* Human safety issue: the quality of illegal buildings can not be guaranteed and may threaten the life and health of residents (e.g.earthquake, flood, etc) `r Citep(myBib,"hortonTurkeyEarthquakeWhy2023a")`
 
 * Property of society and human cannot be guaranteed: higher crime rate `r Citep(myBib,"varolDetectionIllegalConstructions2019a")`
 ]
@@ -143,10 +143,10 @@ class: left, left
 
 #### Specific situation in Istanbul
 
-* **Istanbul**, Turkey's largest and most populous city, has always faced significant challenges related to illegal construction. The city has struggled to cope with urbanization and growing demand for housing, which has led to uncontrolled and informal building practices.
+* **Istanbul**, Turkey's largest and most populous city, has always faced significant challenges related to illegal buildings. The city has struggled to cope with urbanization and growing demand for housing, which has led to uncontrolled and informal building practices.
 
 #### Explanation of important term
-* Illegal construction (illegal building): 
+* Illegal buildings (illegal building): 
 Buildings located in Turkey without permission and registration and does not conform to the local urban cadastral plan `r Citep(myBib,"bayraktarLANDREGISTRYCADASTRE2006a","uzunUpgradingIllegalSettlements2015a")`
 
 ---
@@ -166,14 +166,14 @@ class: left, left
 * Indicator 11.1.1: Proportion of urban population living in slums, informal settlements or inadequate housing
 
 **2.United Nation: The New Urban Agenda**
-* Increase the allocation of financial and human resources, as appropriate, to address the problem of illegal construction in a sustainable manner so that residents live in safe, inclusive, accessible, green and quality Spaces, and should promote tenure security and its regularization, as well as conflict prevention and timely mediation.
+* Increase the allocation of financial and human resources, as appropriate, to address the problem of illegal buildings in a sustainable manner so that residents live in safe, inclusive, accessible, green and quality Spaces, and should promote tenure security and its regularization, as well as conflict prevention and timely mediation.
 ]
 
 .panel[.panel-name[National policy]
 
 * **2012-"The urban regeneration law"**
 
-a legal framework for the renewal and restoration and protection of cultural sites in areas considered unsafe or substandard in urban centers. It also includes measures to tackle illegal construction, such as property and legal alternatives for residents living in illegal structures where unsafe structures are demolished.
+a legal framework for the renewal and restoration and protection of cultural sites in areas considered unsafe or substandard in urban centers. It also includes measures to tackle illegal buildings, such as property and legal alternatives for residents living in illegal structures where unsafe structures are demolished.
 
 * **Construction Law (İmar Kanunu in Turkish) Article 42**
 
@@ -298,7 +298,7 @@ However, in the early stage when the business scale is small, cloud servers, suc
 ```{r echo=FALSE, out.width='100%'}
 knitr::include_graphics('img/managed-aws-servers.jpg')
 ```
-.small[Fig. Amazon Web Services (AWS). Source:[Milletech](https://www.milletechinc.com/aws-service-atlanta.html)]
+<font size = 1> [Fig. Amazon Web Services (AWS). Source:[Milletech](https://www.milletechinc.com/aws-service-atlanta.html)]
 ]
 
 ---
@@ -309,7 +309,7 @@ knitr::include_graphics('img/managed-aws-servers.jpg')
 Store the acquired remote sensing image data on the server, and construct the ***remote sensing database*** after data pre-processing such as slicing and stitching. 
 
 #### Basic geographic and planning database
-Acquire data through relevant channels and construct a ***basic geographic and planning database***, containing topography, structures, planning data, etc. 
+Acquire data through relevant channels and construct a ***basic geographic and planning database***, containing TAKBIS (Land Registry and Cadastre Information System in Turkey), topography, structures, planning data, etc. 
 
 #### Process database
 Afterwards, using the data processing and analysis methods described above, unauthorised construction is identified and the resulting possible unauthorised construction sites are compared with the recorded registration data and planning data to identify unauthorised construction sites based on laws and regulations and to build a ***process database***.
@@ -318,7 +318,7 @@ Afterwards, using the data processing and analysis methods described above, unau
 
 ### Use of the service platform
 
-Based on each database, the image management platform, violation identification platform, collaborative office platform and spatial analysis platform are developed and integrated into ***one service platform***, and ***a visualised WebGIS client*** is established using the 3D model of the city to facilitate the use of the management staff. Based on this service platform, illegal construction sites are investigated and dealt with.
+Based on each database, the image management platform, violation identification platform, collaborative office platform and spatial analysis platform are developed and integrated into ***one service platform***, and ***a visualised WebGIS client*** is established using the 3D model of the city to facilitate the use of the management staff. Based on this service platform, illegal buildings sites are investigated and dealt with.
 
 .panelset[
 .panel[.panel-name[Management]
@@ -353,7 +353,7 @@ knitr::include_graphics('img/Workflow.png')
 
 #### Function
 
-The application of remote sensing data in the field of investigating and dealing with urban violations is not limited to illegal construction, but can also be applied to ***urban river encroachment***, ***loss of urban greenery***, ***illegal industrial discharge*** and so on. The platform has a complete process system, and these functions can be added to the system and be used directly.
+The application of remote sensing data in the field of investigating and dealing with urban violations is not limited to illegal buildings, but can also be applied to ***urban river encroachment***, ***loss of urban greenery***, ***illegal industrial discharge*** and so on. The platform has a complete process system, and these functions can be added to the platform and be used directly.
 
 #### Grid management of remote sensing image data
 
