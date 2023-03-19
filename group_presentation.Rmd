@@ -451,6 +451,7 @@ class: inverse, center, middle
 
 ---
 
+
 ### Conclusion
 A platform that can regularly monitor illegal buildings and assist on-site investigation of illegal buildings.
 
@@ -461,15 +462,15 @@ A platform that can regularly monitor illegal buildings and assist on-site inves
 
 ### Benefit
 
-- **Enforcing Building Codes and Regulations** : Deter future illegal building and encourage compliance with building codes and regulations
-
-- **Save a lot of costs to deal with illegal buildings**
+- **Ensuring public safety**: Illegal building can lead to serious safety hazards for the occupants of the building and those in the surrounding area
 
 - **Protecting property values**: Protect property values for residents and businesses in the area
 
-- **Ensuring public safety**: Illegal building can lead to serious safety hazards for the occupants of the building and those in the surrounding area.
-
 - **Protect the environment**: Some illegal buildings are built in nature reserves, urban sewage pipes and other places of great environmental impact
+
+- **Enforcing Building Codes and Regulations** : Deter future illegal building and encourage compliance with building codes and regulations
+
+- **Save a lot of costs to deal with illegal buildings**
 
 - **Save costs and reduce manpower**: Compared with traditional manual inspection, machine learning using remote sensing data reduces the time and labor required
 
@@ -477,23 +478,22 @@ A platform that can regularly monitor illegal buildings and assist on-site inves
 
 ---
 
+
 ### Benefit
 
 |policy | output | improvement
 --------|---------|---------
-International|The Sustainable Development Goals (SDGs)|detect illegal building|Reducing "the proportion of the urban population living in slums, informal settlements or inadequate housing"
-International|The New Urban Agenda|-| prevention of slums and informal settlements
-National|Urban Regeneration Law|-|-
-National|Construction Law|- |-
-City|Urban Planning Training and Capacity Development Programme for Resilient Istanbul|The future development of illegal building location reporting function| ensure proactive participation of all inhabitants of Istanbul
+International|The Sustainable Development Goals & The New Urban Agenda| the violation identification platform |reducing the proportion of the urban population living in slums, informal settlements or inadequate housing
+National|Urban Regeneration Law & Construction Law|assist on-site investigation|enforcing building codes and regulations
+City|Urban Planning Training and Capacity Development Programme for Resilient Istanbul|the collaborative office platform| ensure proactive participation of all inhabitants of Istanbul
 
 ---
 
 ### Limitation
 
-- Illegal buildings that only change in height cannot be detected using this method
+- Illegal buildings that only change in height cannot be detected using this method.
 
-- The method takes more time to continuously improve the accuracy
+- The method takes more time to continuously improve the accuracy.
 
 ---
 
