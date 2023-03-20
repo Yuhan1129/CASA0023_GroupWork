@@ -520,3 +520,11 @@ class: left, left
 RefManageR::PrintBibliography(myBib,start = 11, end = 14)
 ```
 ]
+
+---
+
+class: inverse, center, middle
+
+# *THANK YOU!*
+
+### osyz
