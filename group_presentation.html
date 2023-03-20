@@ -44,16 +44,16 @@ background-position: center
 
 ---
 
-class: inverse, left, middle
+class: inverse, center, middle
 
-### *Outline*
+# *Outline*
 
-&lt;font size = 5&gt; 
-1. City Problem
-2. Approach
-3. Workflow
-4. Project Management
-5. Conclusion
+
+### City Problem
+### Approach
+### Workflow
+### Project Management
+### Conclusion
 
 ---
 
@@ -174,18 +174,19 @@ class: inverse, center, middle
   - Multispectral(R,G,B,NIR) 1.24m
 - Revisits less than one day
 - Standard image products available
-  - radiometrically corrected, sensor corrected, orthorectified and projected to the Earth’s Surface.
+  - radiometrically corrected
+  - sensor corrected
+  - orthorectified and projected to the Earth’s Surface.
   
-**TAKBIS**
+**Cadastral Digital Map**
 - Land Registry and Cadastre Information System in Turkey
 - Provide ownership and cadastral information in land registry
 ]
 
 .pull-right[
-&lt;img src="img/worldview3.jpeg"  /&gt;
+&lt;img src="img/worldview3.jpeg" width="669" style="display: block; margin: auto;" /&gt;
+.small[Figure.WorldView3 imagery. Source:[DigitalGlobe](https://worldview3.digitalglobe.com/)]
 
-.small[WorldView3 imagery. Source:[DigitalGlobe](https://worldview3.digitalglobe.com/)
-]
 ]
 
 ---
@@ -204,16 +205,20 @@ class: inverse, center, middle
   
     - if the difference between their layer mean intensities lower than the value given by the maximum spectral difference
   ]
+  
 .panel[.panel-name[Feature Selection]
+
 27 features selected within eCognition for each object
 
 &lt;img src="img/feature.png" width="1925" /&gt;
 ]
+
 .panel[.panel-name[Classification]
 Support Vector Machine with optimum feature selection to classify the objects as buildings or non-buildings(forest, green area, road and water). 
 
 &lt;img src="img/classification.png" width="80%" style="display: block; margin: auto;" /&gt;
-.small[Classification using SVM.Source: Norman et al., 2021]
+.small[Figure.Classification using SVM.Source:&lt;a name=cite-Norman_2021&gt;&lt;/a&gt;([Norman, Shahar, Mohamad, Rahim, Mohd, and Shafri, 2021](#bib-Norman_2021)) ]
+
 ]
 ]
 
@@ -224,18 +229,19 @@ Support Vector Machine with optimum feature selection to classify the objects as
 .pull-left[
 
 Compare the buildings in the classification map with cadastral digital map
-  - The buildings that are contradict to cadastral would be identified illegal.
+  - The buildings that are contradict to cadastre would be identified illegal.
 
 
-#### Validation!
+### Validation
 
-Visit the sites of the identified buildings and verify their legality using on-site inspections or by consulting with local authorities
+- Visit the sites of the identified buildings
+- Verify their legality using on-site inspections or by consulting with local authorities
 ]
 
 .pull-right[
 
 &lt;img src="img/cadastral.png" width="120%" /&gt;
-.small[ Ground truth cadastral data overlap with results.Source: Jovanović et al., 2021]
+.small[Figure.Ground truth cadastral data overlap with results. Source: &lt;a name=cite-rs13163150&gt;&lt;/a&gt;([Jovanović, Gavrilović, Sladić, Radulović, and Govedarica, 2021](#bib-rs13163150))]
 ]
 
 ---
@@ -488,11 +494,22 @@ Armstrong](#cite-hortonTurkeyEarthquakeWhy2023a) (2023). "Turkey
 Earthquake: Why Did so Many Buildings Collapse?" In: _BBC News_.
 _Europe_.
 
+&lt;a name=bib-rs13163150&gt;&lt;/a&gt;[Jovanović, D., M. Gavrilović, D. Sladić, et
+al.](#cite-rs13163150) (2021). "Building Change Detection Method to
+Support Register of Identified Changes on Buildings". In: _Remote
+Sensing_ 13.16.
+
 &lt;a name=bib-jovanovicEnvironmentalImpactIllegal2019a&gt;&lt;/a&gt;[Jovanovic,
 M.](#cite-jovanovicEnvironmentalImpactIllegal2019a) (2019).
 "Environmental Impact of Illegal Construction, Poor Planning and Design
 in Western Balkans: A Review". In: _Global Journal of Engineering
 Sciences_ 3.5.
+
+&lt;a name=bib-Norman_2021&gt;&lt;/a&gt;[Norman, M., H. M. Shahar, Z. Mohamad, et
+al.](#cite-Norman_2021) (2021). "Urban building detection using
+object-based image analysis (OBIA) and machine learning (ML)
+algorithms". In: _IOP Conference Series: Earth and Environmental
+Science_ 620.1, p. 012010.
 
 &lt;a name=bib-ozdemirIzmirDestinasyonuNda2018a&gt;&lt;/a&gt;[Özdemir, G. and S.
 Erdoğan](#cite-ozdemirIzmirDestinasyonuNda2018a) (2018). "İzmir
@@ -506,7 +523,15 @@ Devisch](#cite-peroldArchitectureSouthernAfrican2019a) (2019).
 "Architecture in Southern African Informal Settlements: A Contextually
 Appropriate Intervention". In: _Urbani izziv_ Supplement.30, pp.
 96-111.
+]
 
+---
+
+class: left, left
+
+### References
+
+.small[
 &lt;a name=bib-romanoIllegalBuildingItaly2021a&gt;&lt;/a&gt;[Romano, B., F. Zullo,
 L. Fiorini, et al.](#cite-romanoIllegalBuildingItaly2021a) (2021).
 "Illegal Building in Italy: Too Complex a Problem for National Land
@@ -529,19 +554,6 @@ of Remote Sensing_ 52.1, pp. 335-344.
 F.](#cite-zanfiCittaAbusivaContemporary2013a) (2013). "The Città
 Abusiva in Contemporary Southern Italy: Illegal Building and Prospects
 for Change". In: _Urban Studies_ 50.16, pp. 3428-3445.
-]
-
----
-
-class: left, left
-
-### References
-
-.small[
-
-```
-## Warning in `[[.BibEntry`(x, ind): subscript out of bounds
-```
 ]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
