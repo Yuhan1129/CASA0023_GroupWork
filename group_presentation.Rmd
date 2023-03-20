@@ -199,20 +199,21 @@ class: inverse, center, middle
   - Multispectral(R,G,B,NIR) 1.24m
 - Revisits less than one day
 - Standard image products available
-  - radiometrically corrected, sensor corrected, orthorectified and projected to the Earth’s Surface.
+  - radiometrically corrected
+  - sensor corrected
+  - orthorectified and projected to the Earth’s Surface.
   
-**TAKBIS**
+**Cadastral Digital Map**
 - Land Registry and Cadastre Information System in Turkey
 - Provide ownership and cadastral information in land registry
 ]
 
 .pull-right[
-```{r echo=FALSE, fig.align='bottom'}
+```{r echo=FALSE, fig.align='center'}
 knitr::include_graphics('img/worldview3.jpeg')
 ```
+.small[Figure.WorldView3 imagery. Source:[DigitalGlobe](https://worldview3.digitalglobe.com/)]
 
-.small[WorldView3 imagery. Source:[DigitalGlobe](https://worldview3.digitalglobe.com/)
-]
 ]
 
 ---
@@ -231,20 +232,24 @@ knitr::include_graphics('img/worldview3.jpeg')
   
     - if the difference between their layer mean intensities lower than the value given by the maximum spectral difference
   ]
+  
 .panel[.panel-name[Feature Selection]
+
 27 features selected within eCognition for each object
 
 ```{r echo=FALSE}
 knitr::include_graphics('img/feature.png')
 ```
 ]
+
 .panel[.panel-name[Classification]
 Support Vector Machine with optimum feature selection to classify the objects as buildings or non-buildings(forest, green area, road and water). 
 
 ```{r echo=FALSE,, out.width='80%', fig.align='center'}
 knitr::include_graphics('img/classification.png')
 ```
-.small[Classification using SVM.Source: Norman et al., 2021]
+.small[Figure.Classification using SVM.Source:`r Citep(myBib,"Norman_2021")` ]
+
 ]
 ]
 
@@ -254,12 +259,13 @@ knitr::include_graphics('img/classification.png')
 .pull-left[
 
 Compare the buildings in the classification map with cadastral digital map
-  - The buildings that are contradict to cadastral would be identified illegal.
+  - The buildings that are contradict to cadastre would be identified illegal.
 
 
-### Validation!
+### Validation
 
-Visit the sites of the identified buildings and verify their legality using on-site inspections or by consulting with local authorities
+- Visit the sites of the identified buildings
+- Verify their legality using on-site inspections or by consulting with local authorities
 ]
 
 .pull-right[
@@ -267,7 +273,7 @@ Visit the sites of the identified buildings and verify their legality using on-s
 ```{r echo=FALSE, out.width='120%'}
 knitr::include_graphics('img/cadastral.png')
 ```
-.small[ Ground truth cadastral data overlap with results.Source: Jovanović et al., 2021]
+.small[Figure.Ground truth cadastral data overlap with results. Source: `r Citep(myBib,"rs13163150")`]
 ]
 
 ---
@@ -479,6 +485,6 @@ class: left, left
 
 .small[
 ```{r, results='asis', echo=FALSE}
-RefManageR::PrintBibliography(myBib,start = 11, end = 14)
+RefManageR::PrintBibliography(myBib,start = 11, end = 16)
 ```
 ]
