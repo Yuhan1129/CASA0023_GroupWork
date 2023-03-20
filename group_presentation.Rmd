@@ -82,21 +82,23 @@ class: inverse, center, middle
 
 class: left, left
 ## City Problem
-#### Brief summary of illegal construction problem
-* <font size = 3> With the rapid urbanization around the world, illegal building is one of the crucial problem happened or still happening in many other countries `r Citep(myBib,"akrofiSustainableUrbanDevelopment2019b","romanoIllegalBuildingItaly2021a")`.
-* <font size = 3> The problem of illegal construction in Turkey, which was brought to wide attention by the devastating earthquake in early February this year again, is a very serious and unsustainable development issue, and its impact is huge `r Citep(myBib,"uzunUpgradingIllegalSettlements2015a")`.
-* <font size = 3> **Istanbul**, Turkey's largest and most populous city, also faced significant challenges related to illegal construction. The city has struggled to cope with urbanization and growing demand for housing, which has led to uncontrolled and informal building practices.
+#### Brief summary of illegal buildings problem
+* <font size = 3> With the **rapid urbanization** around the world, **illegal building is one of the crucial problem happened or still happening in many other countries** `r Citep(myBib,"akrofiSustainableUrbanDevelopment2019b","romanoIllegalBuildingItaly2021a")`.
+
+* <font size = 3> The problem of **illegal buildings in Turkey**, which **was brought to wide attention by the devastating earthquake in early February this year again**, is a very serious and unsustainable development issue, and its impact is huge `r Citep(myBib,"uzunUpgradingIllegalSettlements2015a")`.
+
+* <font size = 3> **Istanbul**, Turkey's largest and most populous city, **also faced significant challenges related to illegal buildings**. The city has struggled to cope with urbanization and growing demand for housing, which has led to uncontrolled and informal buildings.
 
 .pull-left[
 * **Illegal buildings: **
-<font size = 2> Buildings located in Turkey without permission and registration and does not conform to the local urban cadastral plan `r Citep(myBib,"bayraktarLANDREGISTRYCADASTRE2006a","uzunUpgradingIllegalSettlements2015a")`
+<font size = 3> Buildings located in Turkey without permission and registration and does not conform to the local urban cadastral plan `r Citep(myBib,"bayraktarLANDREGISTRYCADASTRE2006a","uzunUpgradingIllegalSettlements2015a")`
 ]
 .pull-right[
 ```{r echo=FALSE, out.width='80%', fig.align='center'}
 knitr::include_graphics('img/earthquake_image.jpg')
 ```
 .small[Fig. Buildings after earthquake in Turkey February, 2023.
-Source: [**BBC news**](https://www.bbc.co.uk/news/64568826)
+Source: [**BBC**](https://www.bbc.co.uk/news/64568826)
 ]
 ]
 
@@ -110,7 +112,7 @@ class: left, left
 
 .panelset[
 .panel[.panel-name[Environment]
-* Encroachment on nature: nature reserves, rivers, forests `r Citep(myBib,"jovanovicEnvironmentalImpactIllegal2019a")`
+* **Encroachment on nature:** nature reserves, rivers, forests `r Citep(myBib,"jovanovicEnvironmentalImpactIllegal2019a")`
 ```{r echo=FALSE, out.width='60%', fig.align='center'}
 knitr::include_graphics('img/illegal_building_environment.png')
 ```
@@ -120,22 +122,22 @@ Source: `r Citet(myBib,"feliceRankingIllegalBuildings2019a")`
 ]
 
 .panel[.panel-name[Economic]
-* Exacerbating urban poverty and high unemployment rate `r Citep(myBib,"ahsanInformalHousingApproaches2010a")` 
+* Exacerbating urban **poverty and high unemployment rate** `r Citep(myBib,"ahsanInformalHousingApproaches2010a")` 
 
-* Undermine tourism development `r Citep(myBib,"ozdemirIzmirDestinasyonuNda2018a")`
+* Undermine **tourism development** `r Citep(myBib,"ozdemirIzmirDestinasyonuNda2018a")`
 
-* Distorting markets and creating unfair competition
+* Distorting markets and creating **unfair competition**
 
 ]
 
 .panel[.panel-name[Society and population]
-* Huge inter migration `r Citep(myBib,"zanfiCittaAbusivaContemporary2013a")`
+* **Huge inter migration** `r Citep(myBib,"zanfiCittaAbusivaContemporary2013a")`
 
-* Social safety issue: disturb the social order, which makes government to be difficult to plan and manage `r Citep(myBib,"peroldArchitectureSouthernAfrican2019a","romanoIllegalBuildingItaly2021a")`
+* **Social safety issue:** disturb the social order, which makes government to be difficult to plan and manage `r Citep(myBib,"peroldArchitectureSouthernAfrican2019a","romanoIllegalBuildingItaly2021a")`
 
-* Human safety issue: the quality of illegal buildings can not be guaranteed and may threaten the life and health of residents (e.g.earthquake, flood, etc) `r Citep(myBib,"hortonTurkeyEarthquakeWhy2023a")`
+* **Human safety issue:** the quality of illegal buildings can not be guaranteed and may threaten the life and health of residents (e.g.earthquake, flood, etc) `r Citep(myBib,"hortonTurkeyEarthquakeWhy2023a")`
 
-* Property of society and human cannot be guaranteed: higher crime rate `r Citep(myBib,"varolDetectionIllegalConstructions2019a")`
+* **Property of society and human** cannot be guaranteed: higher crime rate `r Citep(myBib,"varolDetectionIllegalConstructions2019a")`
 ]
 ]
 
@@ -151,24 +153,24 @@ class: left, left
 .panel[.panel-name[Global policy]
 
 **1.United Nation: The Sustainable Development Goals (SDGs)**
-* .small[Goal 11: "Make cities and human settlements inclusive, safe, resilient, and sustainable."]
+* .small[**Goal 11:** ***"Make cities and human settlements inclusive, safe, resilient, and sustainable."***]
 * .small[Target 11.1: By 2030, ensure access for all to adequate, safe and affordable housing and basic services and upgrade slums]
 * .small[Indicator 11.1.1: Proportion of urban population living in slums, informal settlements or inadequate housing]
 
 **2.United Nation: The New Urban Agenda**
-* .small[Increase the allocation of financial and human resources, as appropriate, to address the problem of illegal construction in a sustainable manner so that residents live in safe, inclusive, accessible, green and quality Spaces, and should promote tenure security and its regularization, as well as conflict prevention and timely mediation.]
+* .small[Increase the allocation of financial and human resources, as appropriate, to ***address the problem of illegal construction in a sustainable manner*** so that residents live in safe, inclusive, accessible, green and quality Spaces, and should promote tenure security and its regularization, as well as conflict prevention and timely mediation.]
 ]
 
 .panel[.panel-name[National policy]
 
-**1.2012-"The urban regeneration law"**
+#### **1.2012-"The urban regeneration law"**
 
-* A legal framework for the renewal and restoration and protection of cultural sites in areas considered unsafe or substandard in urban centers. It also includes measures to tackle illegal buildings, such as property and legal alternatives for residents living in illegal structures where unsafe structures are demolished.
+*  A legal framework for the renewal and restoration and protection of cultural sites in areas considered unsafe or substandard in urban centers. It also includes <font color black> ***measures to tackle illegal buildings, such as property and legal alternatives for residents living in illegal structures where unsafe structures are demolished.***
 
 
-**2.Construction Law (İmar Kanunu in Turkish) Article 42**
+#### **2.Construction Law (İmar Kanunu in Turkish) Article 42**
 
-* Stricter building codes and increased fines and penalties for violators
+* Stricter building codes and ***increased fines and penalties for violators.***
 .panel[.panel-name[City policy]
 **1.Urban Planning Training and Capacity Development Programme for Resilient Istanbul:**
 
