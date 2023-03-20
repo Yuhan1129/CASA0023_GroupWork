@@ -82,7 +82,7 @@ class: inverse, center, middle
 
 class: left, left
 ## City Problem
-#### Brief summary of illegal construction problem
+#### Brief summary of illegal buildings problem
 * <font size = 3> With the **rapid urbanization** around the world, **illegal building is one of the crucial problem happened or still happening in many other countries** `r Citep(myBib,"akrofiSustainableUrbanDevelopment2019b","romanoIllegalBuildingItaly2021a")`.
 
 * <font size = 3> The problem of **illegal buildings in Turkey**, which **was brought to wide attention by the devastating earthquake in early February this year again**, is a very serious and unsustainable development issue, and its impact is huge `r Citep(myBib,"uzunUpgradingIllegalSettlements2015a")`.
